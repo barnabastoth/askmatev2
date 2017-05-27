@@ -1,0 +1,28 @@
+<!doctype hmtl>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AskMate - {{ webpage_title }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
+    </head>
+    <body>
+        <div class="updatediv">
+            <p>{{ details[4] }}</p>
+            <p>{{ details[5] }}</p>
+            <h2>Your comment:</h2>
+            <button><a href='/question/{{ question_id }}'>Back</a></button>
+
+            <form action='/{{ action_variable }}/{{ details[0] }}/new_comment' method='POST'>
+                <textarea rows='5' cols='70' name='answer' minlength='10'></textarea>
+                <br><br>
+                <input type='submit', value=' Send '>
+            </form>
+        </div>
+        
+        <div class="create">
+            <a id="home" href="/">
+                <img src="http://icons.iconarchive.com/icons/robsonbillponte/iRob/512/Folder-Home-Folder-icon.png" height="50px" width="50px"/>
+            </a>
+        </div>
+    </body>
+</html>

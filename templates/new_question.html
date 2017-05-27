@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>New Question</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
+    </head>
+    <body>
+        <div class="update">
+            <h1>New Question</h1>
+            <form class="update" action="/new_question" method="POST">
+                <p>Question title:</p>
+                <input id=question_input type="text" name="new_question" minlength=10 placeholder="Min. 10 characters">
+                <br><br>
+                <p>Question story:</p>
+                <textarea type="text" name="new_question_long" ></textarea>
+                <br><br>
+                <p>Add a picture:</p>
+                <input id=picture_url type="text" name="picture" placeholder="http://example.url/picture.png">
+                <br><br>
+                <input id=submit_new_question type="Submit" value="Add new question">       
+            </form>
+        </div>
+
+        <div class="create">
+            <a id="home" href="/">
+            <img src="http://icons.iconarchive.com/icons/robsonbillponte/iRob/512/Folder-Home-Folder-icon.png" height="50px" width="50px"/>
+            </a>
+        </div>
+    </body>
+</html>

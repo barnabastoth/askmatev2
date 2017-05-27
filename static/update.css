@@ -1,0 +1,87 @@
+body {
+    background-color: #393f4d;
+    margin: 0;
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+h1 {
+    color: #feda6a;
+}
+p {
+    font-size: 1.2vw;
+}
+div.update form p {
+    color:white;
+    font-size: 14px;
+}
+form.update textarea {
+    width: 75%;
+    height: 100px;
+    background-color: #8f9dbf;
+    border: 0px;
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
+form.update textarea:hover {
+    background-color: #a8b8e0;
+}
+label {
+    font-size: 16px;
+}
+
+div.updatediv {
+    color: white;
+    top: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #535c70;
+    margin: 0 auto;
+    padding: 20px 0px 50px 0px;
+    border: 0px solid #acbde5;
+}
+
+#submit {
+    
+    width: 95%;
+    background-color: #8f9dbf;
+    border: 0px;
+    padding: 5px;
+    color: white;
+}
+#submit:hover { 
+    background-color: #a8b8e0;
+}
+#question_input {
+    width: 65%;
+    height: 25px;
+    background-color: #8f9dbf;
+    border: 0px;
+    color: white;
+    padding: 5px 0px 5px 0px;
+}
+
+#picture_url {
+    width: 65%;
+    height: 25px;
+    background-color: #8f9dbf;
+    border: 0px;
+    color: white;
+    padding: 5px 0px 5px 0px;   
+}
+
+/*create button at the right bottom corner*/
+div.create {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+}
+div.create input {
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+}
+div.create input:hover { opacity: 1; -webkit-filter: brightness(150%); }
+/*create button at the right bottom corner*/

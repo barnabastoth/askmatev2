@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
+  </head>
+  <body>
+      <div class="updatediv">
+          <h1>Update your question</h1>
+          <form class="update" action="/question/{{ id }}/edit", method="POST">
+          <label for id="question_area"></label>
+          <textarea type="text" id="question_area" name="question_update">{{ selected_question[0] }}</textarea>
+          <textarea type="text" id="question_area" name="message_update">{{ selected_question[1] }}</textarea>
+          <input id="submit" type="submit" value="Update it!" />
+          </form>
+      </div>
+
+      <div class="create">
+        <a id="home" href="/">
+          <img src="http://icons.iconarchive.com/icons/robsonbillponte/iRob/512/Folder-Home-Folder-icon.png" height="50px" width="50px"/>
+        </a>
+      </div>
+  </body>
+</html>
