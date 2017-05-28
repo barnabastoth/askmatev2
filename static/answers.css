@@ -104,49 +104,7 @@ div.question_comments li {
 }
 div.question_comments p:hover { background-color: #535c70;}
 
-div.top_menu {
-    border-top: 5px solid black;
-}
-div.top_menu table {
-    padding: 0px;
-    margin: 0;
-    font-size: 0.85vw;
-    top: 0px;
-    right: -5px;
-    position:fixed;
-    height: 30px;
-    background-color: #373737;
-    color: #feda6a;
-    width: 80%;
-    border-bottom: 5px solid #222222;
-    table-layout: fixed;
-}
-div.top_menu table td {
-    border-right: 2px solid black;
-}
-td:hover { 
-    transition: background-color 0.7s ease-in; 
-    background-color: #8f9dbf;
-}
 
-div.leftmenu img {
-    width: 100%;
-    height: auto;
-}
-
-div.top_menu img {
-    width: 20px;
-    height: 20px;
-}
-div.top_menu input {
-    width: 20px;
-    height: 20px;
-}
-
-div.answers img{
-    width: 20px !important;
-    height: 20px !important;
-}
 
 /*create button at the right bottom corner*/
 div.create {
@@ -170,70 +128,6 @@ div.create input {
 div.create input:hover { opacity: 1; -webkit-filter: brightness(150%); }
 /*create button at the right bottom corner*/
 
-
-div.all_answers {
-    margin-top: 100px;
-}
-tr.text td {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-table.answers {
-    top: 0px;
-    width: calc(60% - 4px);
-    margin-right: 10%;
-    margin-left: auto;
-    border: 1px solid black;
-    color: #feda6a;
-    background-color: #222222;
-    font-size: 0.8vw;
-    border-radius: 3px;
-}
-tr.text td {
-    background-color: #373737;
-}
-table.answers td {  
-    border-right: 3px solid black;    
-    max-width: 100px;
-    overflow: hidden;
-    table-layout: fixed;
-    word-wrap:break-word;
-    margin-bottom: 20px;
-}
-table.answers td:first-child {
-    border-left: 3px solid black;
-}
-table.answers tr {
-    padding: 4px;
-    background-color: #495163;
-    margin-bottom: 20px;
-}
-
-table.answers img {
-    width: 15px;
-    height: 15px;
-}
-
-table.answers tr.atrib {
-    background: #222222;
-    border-color: #252933;
-}
-table.answer_comments {
-    top: 0px;
-    width: calc(60% - 10px);
-    margin-right: 10%;
-    margin-left: auto;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
-    color: white;
-    background-color: #565656;
-    font-size: 0.7vw;
-    border-radius: 3px;
-}
-table.answer_comments td {
-    background-color: #565656;
-}
 /*sort_by right bottom corner*/
 form.sortby {
     position: fixed;
@@ -291,3 +185,109 @@ tr.text td img{
     width: 100px;
     height: 100px;
 }
+
+/*############################ TOP BAR #############################*/
+div.top_menu img {
+    width: 20px;
+    height: 20px 
+}
+div.top_menu input {
+    width: 20px;
+    height: 20px; 
+}
+
+div.top_menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: #222222;
+    width: calc(80% - 10px);
+    height: 40px;
+    color: #feda6a;
+    font-size: 0.7vw;
+    border-bottom: 3px solid black;
+}
+div.topmenu table {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+div.top_menu table td {
+    width: 10%;
+    overflow: hidden;
+    padding: 0px 10px 0px 10px;
+    border-right: 3px solid black;
+}
+div.top_menu table td:hover {
+    transition: background-color 0.7s ease-in; 
+    background-color: #414756;
+}
+/*############################ TOP BAR #############################*/
+
+
+
+
+
+/*############################ ANSWERS #############################*/
+
+div.answers {
+    width: 60%;
+    color: white;
+    margin-top: 80px;
+    margin-right: 10%;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+div.answers img{
+    max-width: 20px;
+    max-height: 20px;
+}
+div.answers table {
+    font-size: 0.8vw;
+    border-collapse: collapse;
+    width: 100%;
+    word-wrap:break-word;
+}
+
+
+/*####MAINLIST TOP-BAR####*/
+div.answers thead {
+    background-color: #222222;
+    width: 100%;
+}
+div.answers thead td{
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    border-right: 3px solid black;
+    color: #feda6a; 
+}
+div.answers thead td:hover { 
+    transition: background-color 0.7s ease-in; 
+    background-color: #414756;
+}
+/*####MAINLIST TOP-BAR####*/
+
+
+/*####MAINLIST ANSWERS####*/
+div.answers tbody {
+    background-color: #373737;
+}
+div.answers tbody td {
+    padding: 20px; 
+}
+/*####MAINLIST ANSWERS####*/
+
+
+/*####MAINLIST COMMENTS####*/
+div.answers tfoot {
+    background-color: #565656;
+}
+div.answers tfoot td {
+    font-size: 0.6vw;
+}
+div.answers tfoot td:hover { 
+    transition: background-color 0.7s ease-in; 
+    background-color: #414756;
+}
+/*####MAINLIST COMMENTS####*/
+
+/*############################ ANSWERS #############################*/
