@@ -73,6 +73,10 @@ div.answers table {
     word-wrap:break-word;
 }
 
+div.answers table {
+    border: 3px solid #222222;
+}
+
 
 /*####MAINLIST TOP-BAR####*/
 div.answers thead {
@@ -82,7 +86,6 @@ div.answers thead {
 div.answers thead td{
     border: 1px solid black;
     padding: 5px 10px 5px 10px;
-    border-right: 3px solid black;
     color: #feda6a; 
 }
 div.answers thead td:hover { 
@@ -98,6 +101,7 @@ div.answers tbody {
 }
 div.answers tbody td {
     padding: 20px; 
+    border-bottom: 3px solid #222222;
 }
 /*####MAINLIST ANSWERS####*/
 
